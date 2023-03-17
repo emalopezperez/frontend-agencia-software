@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.font_titulos{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.font_text{
+  font-family: 'Roboto', sans-serif;
+}
+
