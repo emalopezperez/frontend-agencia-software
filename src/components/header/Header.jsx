@@ -103,16 +103,16 @@ const Header = ({ typewriter, text, descripcion }) => {
         priority
       />
       <div className="w-full h-screen max-h-[360px] lg:max-h-[540px]  absolute top-0  bg-white/80"></div>
-
+      
       <div className="absolute top-0 w-full px-6 lg:px-8 h-4/6 md:h-screen">
         <div className="max-w-full pt-24 pb-12 mx-auto xl:mx-12 xl:pt-40 xl:pb-64 lg:pt-40 lg:pb-48 ">
           <div>
             <div>
-              <h1 className="pb-16 text-4xl font-semibold tracking-tight sm:text-5xl font_titulos">
+              <h1 className="pb-16 font-semibold tracking-tight text-md sm:text-5xl font_titulos">
                 { text } <span> </span>
                 {
                   typewriter && <Typewriter
-                    words={ ['calidad', 'garantia', 'profesionalismo'] }
+                    words={ ['calidad', 'garantia', 'profesional'] }
                     loop={ 0 }
                     cursor
                     cursorStyle='_'
@@ -124,7 +124,7 @@ const Header = ({ typewriter, text, descripcion }) => {
               </h1>
 
               {
-                typewriter ? <div className="flex max-w-3xl gap-4 leading-8 text-black text-md">
+                typewriter ? <div className="flex-col max-w-xl md:max-w-3xl  md:gap-4 text-[14px] leading-8 text-black xl:text-md ">
                   <span className='font-medium leading-8 text-gray-700 transition duration-300 ease-in-out transform border-b-2 border-transparent cursor-pointer text-md sm:text-center hover:border-orange-500 hover:scale-90'><Link href='/'>Web Development</Link></span>
                   <span className='mx-1 font-medium leading-8 text-gray-700 transition duration-300 ease-in-out transform border-b-2 border-transparent cursor-pointer text-md sm:text-center hover:border-orange-500 hover:scale-90'><Link href='/'> App Development</Link></span>
                   <span className='mx-1 font-medium leading-8 text-gray-700 transition duration-300 ease-in-out transform border-b-2 border-transparent cursor-pointer text-md sm:text-center hover:border-orange-500 hover:scale-90'><Link href='/'> Game Development</Link></span>
@@ -135,8 +135,8 @@ const Header = ({ typewriter, text, descripcion }) => {
                     { descripcion }
                   </p>
               }
-              
-              <div className="absolute left-0 flex mx-6 mt-40 space-x-6 xl:mx-20">
+
+              <div className="absolute left-0 flex mx-6 space-x-6 mt-14 md:mt-40 xl:mx-20">
                 { navigation.social.map((item) => (
                   <a key={ item.name } href={ item.href } className="text-gray-900 hover:text-gray-800">
                     <span className="sr-only">{ item.name }</span>
