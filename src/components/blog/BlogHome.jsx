@@ -61,11 +61,11 @@ const settings = {
 const BlogHome = () => {
   return (
     <div className="flex flex-col justify-center h-screen mx-auto mt-20 no-scrollbar">
-    <h2 className="mx-24 mb-10 text-4xl font-bold font_titulos">Nuestro blog </h2>
+    <h2 className="flex justify-center mx-24 mb-10 text-2xl font-bold md:text-4xl font_titulos">Nuestro blog </h2>
       <Slider className="pb-5 md:pb-10 max-w-[300px] md:max-w-[1210px] mx-auto" { ...settings }>
         { products.map(product => (
           <div key={ product.id } className='flex flex-col '>
-            <div className="transition duration-300 ease-in-out transform cursor-pointer hover:scale-90 w-[400px]">
+            <div className="transition duration-300 ease-in-out transform cursor-pointer hover:none md:hover:scale-90 w-[400px]">
               <img src={ product.image } alt={ product.name } />
               <h3 className="pt-2 pb-2">{ product.name }</h3>
               <p className="">{ product.description }</p>

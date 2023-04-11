@@ -5,7 +5,7 @@ import Link from "next/link"
 const Conection = () => {
   return (
     <div className="flex items-center justify-center mx-auto mb-20">
-      <div className="grid grid-cols-1 sm:grid-cols-2 max-w-[1210px] gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 max-w-[1210px] gap-10 ">
         <div className="w-full sm:w-[500px] h-auto flex flex-col items-center justify-center gap-6">
           <h2 className="text-5xl font-bold text-center mt-14 font_titulos sm:text-left">Construyamos
             <Link href='/'>

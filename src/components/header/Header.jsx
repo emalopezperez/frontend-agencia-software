@@ -103,7 +103,7 @@ const Header = ({ typewriter, text, descripcion }) => {
         priority
       />
       <div className="w-full h-screen max-h-[360px] lg:max-h-[540px]  absolute top-0  bg-white/80"></div>
-      
+
       <div className="absolute top-0 w-full px-6 lg:px-8 h-4/6 md:h-screen">
         <div className="max-w-full pt-24 pb-12 mx-auto xl:mx-12 xl:pt-40 xl:pb-64 lg:pt-40 lg:pb-48 ">
           <div>
