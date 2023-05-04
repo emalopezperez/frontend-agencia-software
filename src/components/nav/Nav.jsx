@@ -177,7 +177,7 @@ const Nav = () => {
             </Link>
 
             <Link
-              href="/"
+              href="/blog"
               className="transition duration-300 ease-in-out transform cursor-pointer eading-6 hover:text-orange-400 hover:scale-90">
               Blog
             </Link>
